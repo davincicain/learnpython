@@ -109,3 +109,53 @@
 # func4()
 # func4("zhaoyi","qianer","sunsan","lisi")
 #
+# #The scope of variables
+# #Local variable
+# def func():
+#     a="zhaoyi"
+#     print(a)
+# #print(a),Reading a variable inside a function outside the function will result in an error.
+
+# #Global variable
+# a="zhaoyi"#Global variable
+# def func2():
+#    a="qianger"
+#    print(a)#Create a local variable with the same name.
+#
+# func2()#Executed the local variable within the function.
+# print(a)#print global variable
+#
+# a="zhaoyi"
+# def func3():
+#     global a #Declare "a" as a global variable.
+#     a="qianer"
+#     print(a)
+#
+# func3()
+#
+# #nested scope
+# def function3():
+#     a="zhaoyi"
+#     b="qianer"
+#     c="sunsan"
+#     print("f3 has been executed!")
+#     print(a)
+#     print(b)
+#     print(c)
+#     def function4():
+#         a="lisi"
+#         print("The F4 in F3 has been executed!")
+#         print(a)
+#         print(b)
+#         print(c)
+#         def function5():
+#             a="zhouwu"
+#             b="wuliu"
+#             print("The F5 in F4 has been executed!")
+#             print(a)
+#             print(b)
+#             print(c)
+#         function5()
+#     function4()
+# function3()
+#
