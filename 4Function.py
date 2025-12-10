@@ -159,3 +159,40 @@
 #     function4()
 # function3()
 #
+# #Anonymous function, used for simple calculation
+# func=lambda a,b:a+b
+# result=func(1,2)
+# print(result)
+#
+# #use a function as an argument
+# listA=[1,2,3,4,5,6,7,8,9,0]
+# listB=filter(lambda x:x%2==0,listA) #Filter all the even numbers from the list
+# print(list(listB))
+#
+# #Decorator
+# def decorator(func): #Receive a function as an argument.
+#     def wrapper():
+#         print("start calling the function!")
+#         func()
+#         print("The function call has ended!")
+#     return wrapper
+#
+# @decorator #Annotation, add some other functions to the function.
+# def sayhello():
+#     print("hello world!")
+# sayhello()
+#
+# def d(a):
+#     def b():
+#         inn=input("please input your password:")
+#         if inn == "123456":
+#             print("verification was successful!")
+#             a()
+#         else:
+#             print("verification was not successful!")
+#     return b
+#
+# @d
+# def c():
+#     print("in the process of transfer money!")
+# c()
