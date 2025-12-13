@@ -164,25 +164,3 @@
 #         else:
 #             print("Invalid choice, please try again!")
 #             continue
-
-# def add(a, b):
-#     return a + b
-#
-# # 定义一个"包装函数"，接收函数作为参数
-# def wrapper(func, x, y):
-#     print(f"即将执行函数：{func.__name__}")
-#     result = func(x, y)  # 执行传入的函数
-#     print(f"函数执行结果：{result}")
-#     return result
-#
-# wrapper(add, 2, 3)
-
-def outer(msg):
-    # 内部函数
-    def inner():
-        print(f"内部函数执行：{msg}")
-    return inner  # 返回内部函数（不执行）
-
-# 调用outer，得到inner函数
-f = outer("hello 装饰器")
-f()  # 执行inner函数

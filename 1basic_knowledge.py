@@ -1,7 +1,4 @@
 # #This is a python program.
-# from site import setquit
-# from tokenize import triple_quoted
-#
 # print("hello world1")#This is also a python program.
 #
 # #ctrl+？: This is a multi-line quick comment.

@@ -31,27 +31,23 @@
 # #defined function
 # def function1():
 #     print("function1 has been executed!")
-#
 # def function2():
 #     function1()#Call a function within a function.
 #     print("function2 has been executed!")
-#
 # #function call
 # function1()
 #
 # for i in range(10):
 #     print(i)
 #     function1()
-#
 # function2()
 #
-#function with parameters
-#
-# def getSum(a,b):#formal parameter
+# #function with arguments
+# def getSum(a,b):#formal argument
 #     c=a+b
 #     print(c)
 #
-# getSum(1,2)#actual parameter, the number of actual parameters and formal parameters needs to be consistent.
+# getSum(1,2)#actual argument, the number of actual parameters and formal parameters needs to be consistent.
 #
 # def getSum(a,b):#formal parameter
 #     c=a+b
@@ -76,7 +72,7 @@
 #     return#Using a single return is to end the total function.
 #
 # func3()
-
+#
 # #four ways of passing parameters
 # #positional argument
 # def func1(nameA,nameB):
@@ -101,7 +97,7 @@
 # func3("sunsan","lisi")
 # func3("sunsan",nameB="lisi")
 #
-#variable length argument
+# variable length argument
 # def func4(*names):
 #     print(f"My friend's name are: ")
 #     print(names,type(names))#The output is tuple.
@@ -115,7 +111,7 @@
 #     a="zhaoyi"
 #     print(a)
 # #print(a),Reading a variable inside a function outside the function will result in an error.
-
+#
 # #Global variable
 # a="zhaoyi"#Global variable
 # def func2():
