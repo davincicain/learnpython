@@ -71,7 +71,7 @@
 # for _ in range(10):#"_"indicates a loop variable that is not used.
 #     print("hello, world!")
 #
-# for i in range(1,11,1):#rang(initial value(include),end value(exclude),step size)
+# for i in range(1,11,2):#rang(initial value(include),end value(exclude),step size)
 #     print(f"第{i}次打印：hello, world!")
 # print("print end")#outside the loop
 #
@@ -83,7 +83,7 @@
 #
 # #loop throngh the container using a for loop
 # #direct traversal
-# listNames=["zhaoyi","qianer","sunsan","lisi","zhouwu","wuliu","zhengqi","wangba"]
+# listNames=["yi","er","san","si","wu","liu","qi","ba"]
 # for i in listNames:
 #     print(i)
 # for i in listNames:
@@ -94,17 +94,17 @@
 #     print(listNames)
 #
 # #constract an index:
-# lNames=["zhaoyi","qianer","sunsan","lisi","zhouwu","wuliu","zhengqi","wangba"]
-# for idx in range(0,len(lNames)):
-#     print(lNames[idx])
+# listNames=["yi","er","san","si","wu","liu","qi","ba"]
+# for idx in range(0,len(listNames)):
+#     print(listNames[idx])
 #
 # #tuple traversal
-# tNames=("zhaoyi","qianer","sunsan","lisi","zhouwu","wuliu","zhengqi","wangba")
-# for idx in range(0,len(tNames)):
-#     print(tNames[idx])
+# listNames=("yi","er","san","si","wu","liu","qi","ba")
+# for idx in range(0,len(listNames)):
+#     print(listNames[idx])
 #
 # #dictionary traversal: The dictionary has no index, so it can only be traversed directly.
-# userInfo={"name":"zhaoyi","age":18,"hobby":"basketball"}
+# userInfo={"name":"yi","age":1,"hobby":"basketball"}
 # for x in userInfo:
 #     print(x) #It will get only the keys when the direct traversal method is used for the dictionary.
 # for x in userInfo:
@@ -113,12 +113,12 @@
 #     print(x,userInfo[x])
 #
 # #set traversal
-# setA={1,23,456,7890}
-# for x in setA:
+# seta={1,23,456,789}
+# for x in seta:
 #     print(x)#The set is disordered, so it will print a variable result.
 #
 # #The combined application of selection structures and loop structures
-# names=["zhaoyi","qianer","sunsan","lisi","zhouwu","wuliu","zhengqi","wangba"]
+# names=["yi","er","san","si","wu","liu"]
 # key=input("Please input the name you want to search: ")
 # result="Not exist!"
 # for name in names:
@@ -134,7 +134,7 @@
 #
 # #nested loop
 # day=1
-# while day <= 7:
+# while day<=7:
 #     print(f"{day} day")
 #     i=1
 #     while i <= 10:
@@ -145,42 +145,26 @@
 # lista=[0,1,2,3]
 # listb=[4,5,6]
 # listc=[7,8,9]
-# listx=[lista,listb,listc]
-# for i in listx:
+# listd=[lista,listb,listc]
+# for i in listd:
 #     for j in i:
 #         print(j)
 #     print("----------")
 #
 # #continue and break
 # for i in range(1,11):
+#     print(f"{i} year, I have repaid the loan.")
 #     if i==5:
-#         print("I need not repay the loan.")
+#         print(f"{i} year, I need not repay the loan.")
 #         continue #End this loop and continue the next loop.
 #     if i==10:
 #         print("I have already repaid the whole loan.")
 #         break #End the whole loop.
-#     print(f"{i} year, I have repaid the loan.")
 #
 # #infinite loop
 # i=1
 # while True:
 #     print(i)
 #     i+=1
-#     break
 #
 # #pass: Use it to reserve a position when you have no idea, and the program does not report an error.
-#
-# # bubble sort
-# # Ascending sort
-# listA=[36,45,27,18,90,9,81,72,54,63]
-# for i in range(1,len(listA)):
-#     print(f"{i} round")
-#     print(listA)
-#     for j in range(0,len(listA)-i):
-#         print(f"{j+1} times")
-#         if listA[j] > listA[j+1]:
-#             x = listA[j]
-#             listA[j] = listA[j+1]
-#             listA[j+1] = x
-#         print(listA)
-# print(listA)

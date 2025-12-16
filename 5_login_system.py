@@ -1,11 +1,11 @@
-# account1={"name":"zhao","accountName":"aaa","password":"111","balance":10000}
-# account2={"name":"qian","accountName":"bbb","password":"222","balance":20000}
-# account3={"name":"sun","accountName":"ccc","password":"333","balance":30000}
-# account4={"name":"li","accountName":"ddd","password":"444","balance":40000}
-# account5={"name":"zhou","accountName":"eee","password":"555","balance":50000}
-# account6={"name":"wu","accountName":"fff","password":"666","balance":60000}
-# account7={"name":"zheng","accountName":"ggg","password":"777","balance":70000}
-# account8={"name":"wang","accountName":"hhh","password":"888","balance":80000}
+# account1={"name":"yi","accountName":"aaa","password":"111","balance":10000}
+# account2={"name":"er","accountName":"bbb","password":"222","balance":20000}
+# account3={"name":"san","accountName":"ccc","password":"333","balance":30000}
+# account4={"name":"si","accountName":"ddd","password":"444","balance":40000}
+# account5={"name":"wu","accountName":"eee","password":"555","balance":50000}
+# account6={"name":"liu","accountName":"fff","password":"666","balance":60000}
+# account7={"name":"qi","accountName":"ggg","password":"777","balance":70000}
+# account8={"name":"ba","accountName":"hhh","password":"888","balance":80000}
 # accountList=[account1,account2,account3,account4,account5,account6,account7,account8]
 #
 # for login_count in range(len(accountList)):

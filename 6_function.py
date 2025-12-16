@@ -1,15 +1,15 @@
 # #built-in function
 # #absolute value
-# a=-5
+# a=-1
 # print(abs(a))
 #
 # # aounding
-# b=3.1415
-# print(round(b))
-# c=15.3
-# d=3
-# print(c/d)
-# print(round(c/d))
+# a=1.2
+# print(round(a))
+# a=12.3
+# b=3
+# print(a/b)
+# print(round(a/b))
 #
 # #power
 # print(pow(10,3))
@@ -18,13 +18,13 @@
 # print(divmod(10,3))
 #
 # #string splitting
-# e="zhaoyi,qianer,sunsan,lisi"
-# e=e.split(",")
-# print(e)
+# a="yi,er,san,si"
+# b=a.split(",")
+# print(b)
 #
 # #string replace
-# f="zhaoyi,qianer,sunsan,lisi"
-# f=f.replace("qianer","zhouwu")
+# f="yi,er,san,si"
+# f=f.replace("er","wu")
 # print(f)
 #
 # #user-defined function
@@ -34,19 +34,16 @@
 # def function2():
 #     function1()#Call a function within a function.
 #     print("function2 has been executed!")
-# #function call
-# function1()
 #
 # for i in range(10):
 #     print(i)
-#     function1()
+#     function1()#function call
 # function2()
 #
 # #function with arguments
 # def getSum(a,b):#formal argument
 #     c=a+b
 #     print(c)
-#
 # getSum(1,2)#actual argument, the number of actual parameters and formal parameters needs to be consistent.
 #
 # def getSum(a,b):#formal parameter
@@ -58,106 +55,97 @@
 #
 # print(getSum(1,2)/2)
 #
-# def func2():
+# def func1():
 #     a=1
 #     b=2
 #     c=3
 #     return a,b,c
+# print(func1())#Multiple parameters will be returned in the form of a tuple.
+# print(type(func1()))
 #
-# print(func2())#Multiple parameters will be returned in the form of a tuple.
-# print(type(func2()))
-#
-# def func3():
+# def func1():
 #     print("func3 has been executed!")
 #     return#Using a single return is to end the total function.
-#
-# func3()
+# func1()
 #
 # #four ways of passing parameters
 # #positional argument
 # def func1(nameA,nameB):
 #     print(f"{nameA} owes {nameB} one thousand yuan.")
-#
-# func1("zhaoyi","qianer")
+# func1("yi","er")
 #
 # #keyword argument
-# def func2(nameA,nameB):
+# def func1(nameA,nameB):
 #     print(f"{nameA} owes {nameB} one thousand yuan.")
-#
-# func2(nameA="qianer",nameB="zhaoyi")
+# func1(nameA="yi",nameB="er")
 #
 # #default argument
-# def func3(nameA="zhaoyi",nameB="qianer"):
+# def func1(nameA="yi",nameB="er"):
 #     print(f"{nameA} owes {nameB} one thousand yuan.")
+# func1()
+# func1("san")
+# func1(nameA="si")
+# func1(nameB="wu")
+# func1("liu","qi")
+# func1("ba",nameB="jiu")
 #
-# func3()
-# func3("sunsan")
-# func3(nameA="sunsan")
-# func3(nameB="lisi")
-# func3("sunsan","lisi")
-# func3("sunsan",nameB="lisi")
-#
-# variable length argument
-# def func4(*names):
+# #variable length argument
+# def func1(*names):
 #     print(f"My friend's name are: ")
 #     print(names,type(names))#The output is tuple.
-#
-# func4()
-# func4("zhaoyi","qianer","sunsan","lisi")
+# func1()
+# func1("yi","er","san","si")
 #
 # #The scope of variables
 # #Local variable
-# def func():
-#     a="zhaoyi"
+# def func1():
+#     a="yi"
 #     print(a)
-# #print(a),Reading a variable inside a function outside the function will result in an error.
+# print(a)#Reading a variable inside a function outside the function will result in an error.
 #
 # #Global variable
-# a="zhaoyi"#Global variable
-# def func2():
-#    a="qianger"
+# a="yi"#Global variable
+# def func1():
+#    a="er"
 #    print(a)#Create a local variable with the same name.
+# func1()#Executed the local variable within the function.
 #
-# func2()#Executed the local variable within the function.
-# print(a)#print global variable
-#
-# a="zhaoyi"
-# def func3():
+# a="yi"
+# def func1():
 #     global a #Declare "a" as a global variable.
-#     a="qianer"
+#     a="er"
 #     print(a)
-#
-# func3()
+# func1()
 #
 # #nested scope
-# def function3():
-#     a="zhaoyi"
-#     b="qianer"
-#     c="sunsan"
-#     print("f3 has been executed!")
+# def function1():
+#     a="yi"
+#     b="er"
+#     c="san"
+#     print("f1 has been executed!")
 #     print(a)
 #     print(b)
 #     print(c)
-#     def function4():
-#         a="lisi"
-#         print("The F4 in F3 has been executed!")
+#     def function2():
+#         a="si"
+#         print("The F2 in F1 has been executed!")
 #         print(a)
 #         print(b)
 #         print(c)
-#         def function5():
-#             a="zhouwu"
-#             b="wuliu"
-#             print("The F5 in F4 has been executed!")
+#         def function3():
+#             a="wu"
+#             b="liu"
+#             print("The F3 in F2 has been executed!")
 #             print(a)
 #             print(b)
 #             print(c)
-#         function5()
-#     function4()
-# function3()
+#         function3()
+#     function2()
+# function1()
 #
-# #Anonymous function, used for simple calculation
-# func=lambda a,b:a+b
-# result=func(1,2)
+# #Anonymous function: used for simple calculation
+# func1=lambda a,b:a+b
+# result=func1(1,2)
 # print(result)
 #
 # #use a function as an argument
