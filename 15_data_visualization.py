@@ -32,7 +32,7 @@ def main():
     #set parameters
     bar.set_global_opts(
         title_opts = options.TitleOpts(
-            title = "the sales situation in the mall",
+            title = "sales situation in the mall",
             pos_top = "10px",
             pos_left = "center",
             title_textstyle_opts = options.TextStyleOpts(
@@ -50,7 +50,7 @@ def main():
     )
 
     #generate a chart
-    bar.render("the sales situation in the mall.html")
+    bar.render("sales situation in the mall.html")
 
 
     brand = ['apple','huawei','xiaomi','oppo','vivo','sansung']
@@ -73,7 +73,7 @@ def main():
     #set title
     pie.set_global_opts(
         title_opts=options.TitleOpts(
-            title="the sales situation of phone",
+            title="sales situation of phone",
             pos_top="10px",
             pos_left="center",
             title_textstyle_opts=options.TextStyleOpts(
@@ -92,7 +92,7 @@ def main():
     )
 
     # generate a chart
-    pie.render("the sales situation of phone.html")
+    pie.render("sales situation of phone.html")
 
 
     month=['january','february','march','april','may','june','july','august','september','october','november','december']
@@ -106,7 +106,7 @@ def main():
 
     line.set_global_opts(title_opts=options.TitleOpts(title='city rainfall'))
 
-    line.render("the city rainfall.html")
+    line.render("city rainfall.html")
 
 if __name__ == '__main__':
     main()
