@@ -18,7 +18,7 @@ print(data1)
 file1.close()
 
 file1=open(r"D:\shaojun3\Desktop\py\reference1\poem1.txt","r",encoding="utf-8")
-data1=file1.readlines()#read the file line by line and store each line'st content into the list
+data1=file1.readlines()#read the file line by line and store each line's content into the list
 print(data1)
 file1.close()
 
@@ -42,7 +42,7 @@ file1.close()
 
 #"w": file writing
 #writing will empty the existing content first
-#open a existing file or create a new file and write content into it
+#open an existing file or create a new file and write content into it
 #the file path must be correct and the new folder can't be created
 string="hello world"
 file1=open(r"D:\shaojun3\Desktop\py\reference1\writing1.txt","w")
@@ -82,9 +82,9 @@ data1=file1.read()
 file1.close()
 print(data1)
 
-# with-open: close files automatically
+#with-open: close files automatically
 with open(r".\reference1\poem1.txt","r",encoding="utf-8") as file:
-    data1=file1.read()
+    data1=file.read()
 print(data1)
 
 #operate read and write simultaneously
